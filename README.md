@@ -13,22 +13,37 @@ type/os/service/name
 ,,,,,,,,,,,,,,,,,,,,,,,
 exploit/windows/ftp/scriptftp_list
 
-ype	Description
-Auxiliary:	Scanning, fuzzing, sniffing, and admin capabilities. Offer extra assistance and functionality.
-Encoders:	Ensure that payloads are intact to their destination.
-Exploits:	Defined as modules that exploit a vulnerability that will allow for the payload delivery.
-NOPs:	(No Operation code) Keep the payload sizes consistent across exploit attempts.
-Payloads:	Code runs remotely and calls back to the attacker machine to establish a connection (or shell).
-Plugins:	Additional scripts can be integrated within an assessment with msfconsole and coexist.
-Post:	Wide array of modules to gather information, pivot deeper, etc.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Auxiliary:	Scanning, fuzzing, sniffing, and admin capabilities. Offer extra assistance and functionality.
+
+Encoders:	Ensure that payloads are intact to their destination.
+
 Exploits:	Defined as modules that exploit a vulnerability that will allow for the payload delivery.
+
+NOPs:	(No Operation code) Keep the payload sizes consistent across exploit attempts.
+
+Payloads:	Code runs remotely and calls back to the attacker machine to establish a connection (or shell).
+
+Plugins:	Additional scripts can be integrated within an assessment with msfconsole and coexist.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Auxiliary:	Scanning, fuzzing, sniffing, and admin capabilities. Offer extra assistance and functionality.
+
+Exploits:	Defined as modules that exploit a vulnerability that will allow for the payload delivery.
+
 Post:	Wide array of modules to gather information, pivot deeper, etc.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 The OS tag specifies which operating system and architecture the module was created for. Naturally, different operating systems require different code to be run to get the desired results.
 
 We can also make our search a bit more coarse and reduce it to one category of services. For example, for the CVE, we could specify the year (cve:<year>), the platform Windows (platform:<os>), the type of module we want to find (type:<auxiliary/exploit/post>), the reliability rank (rank:<rank>), and the search name (<pattern>). This would reduce our results to only those that match all of the above.
+
+For exam: type:exploit platform:windows cve:2021 rank:excellent microsoft
+
+We can use the command info after selecting the module if we want to know something more about the module. This will give us a series of information that can be important for us.
 
 
 
