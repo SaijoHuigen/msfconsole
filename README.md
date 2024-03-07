@@ -9,7 +9,7 @@ The MSF engagement structure can be divided into five main categories.
 
 Many people often think that the failure of the exploit disproves the existence of the suspected vulnerability. However, this is only proof that the Metasploit exploit does not work and not that the vulnerability does not exist. This is because many exploits require customization according to the target hosts to make the exploit work. Therefore, automated tools such as the Metasploit framework should only be considered a support tool and not a substitute for our manual skills.
 
-<type>/<os>/<service>/<name>
+type/os/service/name
 exploit/windows/ftp/scriptftp_list
 
 ype	Description
