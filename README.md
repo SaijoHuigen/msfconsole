@@ -1,4 +1,4 @@
-![layout for msfconsole](https://github.com/SaijoHuigen/msfconsole/assets/162563633/2f39bda3-a054-4f19-827c-46b608b01992)During Enumeration, we have to look at our target and identify which public-facing services are running on it. For example, is it an HTTP server? Is it an FTP server? Is it an SQL Database? These different target typologies vary substantially in the real world. We will need to start with a thorough scan of the target's IP address to determine what service is running and what version is installed for each service.
+During Enumeration, we have to look at our target and identify which public-facing services are running on it. For example, is it an HTTP server? Is it an FTP server? Is it an SQL Database? These different target typologies vary substantially in the real world. We will need to start with a thorough scan of the target's IP address to determine what service is running and what version is installed for each service.
 
 The MSF engagement structure can be divided into five main categories.
 •	Enumeration
@@ -44,6 +44,27 @@ We can also make our search a bit more coarse and reduce it to one category of s
 For exam: type:exploit platform:windows cve:2021 rank:excellent microsoft
 
 We can use the command info after selecting the module if we want to know something more about the module. This will give us a series of information that can be important for us.
+
+If we wanna change payload we should into the payloads first,and then we can change the target, payload, etc
+-----------------------------------------------------------------------------------------------------------------
+Set payload used for set the payload
+
+Set target used for set the target
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+grep very important to minimize the payload so we just looking for that payload we want.
+
+For exam: grep meterpreter grep reverse_tcp show payloads.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+RHOST is ip address our target
+
+RPORT just make sure that it is port we gonna run
+
+LHOST is our ip address
+
 
 
 
